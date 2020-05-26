@@ -1,4 +1,4 @@
-import Planes.experimentalPlane;
+import Planes.ExperimentalPlane;
 import models.MilitaryType;
 import Planes.MilitaryPlane;
 import Planes.PassengerPlane;
@@ -88,14 +88,14 @@ public class Airport
 
     }
 
-    public List<experimentalPlane> getExperimentalPlanes()
+    public List<ExperimentalPlane> getExperimentalPlanes()
     {
-        List<experimentalPlane> experimentalPlanes = new ArrayList<>();
+        List<ExperimentalPlane> experimentalPlanes = new ArrayList<>();
         for (Plane plane : planes)
         {
-            if (plane instanceof experimentalPlane)
+            if (plane instanceof ExperimentalPlane)
             {
-                experimentalPlanes.add((experimentalPlane) plane);
+                experimentalPlanes.add((ExperimentalPlane) plane);
             }
         }
         return experimentalPlanes;
